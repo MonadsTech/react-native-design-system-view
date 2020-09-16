@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "name": "@monadstech/react-native-design-system-view",
+    "version": "0.0.1",
+    "description": "View related component for react native design system",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:MonadsTech/react-native-lib-template.git"
+    },
+    "author": {
+      "name": "Pankaj Vaghela",
+      "email": "vpankaj1998official@gmail.com"
+    },
+    "license": "MIT",
+    "private": false,
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+      "w": "tsc --watch",
+      "build": "tsc",
+      "prepare": "yarn build"
+    },
+    "dependencies": {
+      "react-native": "0.62.2"
+    },
+    "peerDependencies": {
+      "react-native": "^0.62.2"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.6.2",
+      "@babel/runtime": "^7.6.2",
+      "@react-native-community/eslint-config": "^0.0.5",
+      "@types/jest": "^26.0.10",
+      "@types/react": "^16.9.48",
+      "@types/react-native": "^0.63.11",
+      "@types/react-test-renderer": "^16.9.3",
+      "@types/es6-promise": "^3.3.0",
+      "@types/string-format": "^2.0.0",
+      "babel-jest": "^24.9.0",
+      "eslint": "^6.5.1",
+      "jest": "^24.9.0",
+      "metro-react-native-babel-preset": "^0.58.0",
+      "react-native-typescript-transformer": "^1.2.13",
+      "react-test-renderer": "16.11.0",
+      "typescript": "^4.0.2"
+    },
+    "jest": {
+      "preset": "react-native"
+    },
+    "_registry": "npm",
+    "_loc": "/home/pankaj/.cache/yarn/v6/npm-@monadstech-react-native-design-system-view-0.0.1-ebad3027-5633-47c2-a22e-e781c063c275-1599291236095/node_modules/@monadstech/react-native-design-system-view/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# react-native-design-system-text\n\nReact Native Design System Text Component\n\n### How to use\n\n```ts\n//define config\nconst config: TextConfigType = {\n  size: {\n    h1: 21,\n    h2: 19,\n    h3: 16,\n    p: 14,\n  },\n};\n\n// create custom-charged text component\nconst {CustomText} = createTextSystem(config);\n\n// use it in your components\nexport const CustomTextExample: FC<{}> = () => {\n  return <CustomText size=\"h1\" />;\n};\n```\n",
+    "licenseText": "MIT License\n\nCopyright (c) 2020 Monads\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "type": "copy",
+    "registry": "npm",
+    "hash": "ebad3027-5633-47c2-a22e-e781c063c275-1599291236095",
+    "reference": "/mnt/workssd/00Native/onemenu/potter/rnd-view"
+  },
+  "registry": "npm",
+  "hash": "ebad3027-5633-47c2-a22e-e781c063c275-1599291236095"
+}
