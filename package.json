@@ -6,12 +6,12 @@
   "author": "Pankaj Vaghela <vpankaj1998official@gmail.com>",
   "license": "MIT",
   "private": false,
-  "main": "lib/index.js",
+  "main": "lib/module/index.js",
   "types": "lib/index",
   "scripts": {
     "w": "tsc --watch",
     "build": "tsc",
-    "prepare": "yarn build"
+    "prepare": "bob build"
   },
   "dependencies": {
     "react-native": "^0.63.2"
@@ -39,6 +39,29 @@
     "typescript": "^4.0.2"
   },
   "jest": {
-    "preset": "react-native"
-  }
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/"
+    ]
+  },
+  "react-native": "src/index.ts",
+  "module": "lib/module/index.js",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "module"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
